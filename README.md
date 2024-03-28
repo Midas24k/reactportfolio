@@ -26,7 +26,7 @@
   ## Contributors:
     N/A
 
-## Licensing
+  ## Licensing
     
     This project is licensed under the Mit license.
 
