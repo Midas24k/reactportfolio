@@ -15,10 +15,10 @@
   * [Questions](#questions)
   
   ## Created by:
-  Roderick Hughey
+    Roderick Hughey
    
   ## Installation:
-   unsing vite
+    using Vite
 
   ## Usage:
     to amplify an existing portfolio with up to date methods 
