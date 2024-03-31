@@ -1,7 +1,7 @@
 import Button from 'react-bootstrap/Button';
 
 
-export default function HomePage() {
+export function HomePage() {
   return (
     <div className="home-page">
       <h1> Endless Possibilities</h1>
@@ -11,3 +11,5 @@ export default function HomePage() {
     </div>
   );
 }
+
+export default HomePage;
