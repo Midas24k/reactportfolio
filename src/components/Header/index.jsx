@@ -4,11 +4,11 @@ const styles = {
   headerStyle: {
     background: "",
     border: "8px silver solid",
-    radius: "10px"
+    borderRadius: "10px"
   },
   headingStyle: {
     fontSize: "100px",
-    color: "white",
+    color: "silver",
     textAlign: "center",
     padding: "20px",
     margin: "0", 

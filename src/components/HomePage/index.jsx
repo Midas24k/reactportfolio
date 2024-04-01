@@ -6,11 +6,9 @@ const styles = {
       justifyContent: "center",
       alignItems: "center",
       textAlign: "center",
-      padding: "300px",
-      backgroundImage: "url('src/assets/jameswebb.jpg')"
     },
     homeSiteStyle: {
-      color: "white",
+      
       
 
     },
@@ -20,9 +18,10 @@ const styles = {
 export function HomePage() {
   return (
     <div style={styles.homePageStyle} className="homePage">
-      <p style={styles.homeSiteStyle}>"Endless possibilities await those who dare to dream, code, and create. Within the complexity lies the opportunity to create something truly extraordinary."</p>
-      <h1 style={styles.homeSiteStyle}>Created by:Roderick Hughey</h1>
-      <Button variant="light">Enter</Button>
+      <img src="src/assets/jameswebb.jpg" alt="jameswebb"></img> 
+      <p style={styles.homePageStyle}>"Endless possibilities await those who dare to dream, code, and create. Within the complexity lies the opportunity to create something truly extraordinary."</p>
+      <h2 style={styles.homePageStyle}>Created by:Roderick Hughey</h2>
+      <Button variant="dark" size="lg">Enter</Button>
     </div>
   );
 }

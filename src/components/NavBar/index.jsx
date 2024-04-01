@@ -8,18 +8,18 @@ function NavBar() {
     <Navbar bg="dark" data-bs-theme="dark">
       <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand href="#home"></Navbar.Brand>
+        <Navbar.Brand href="#home">Endless Possibilities</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
+          <Nav className="justify-content-end" activeKey="/home">
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#About">About</Nav.Link>
             <NavDropdown title="Misc" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Skills</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">Portfolio</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Contact</NavDropdown.Item>
+              <NavDropdown.Item href="#skills">Skills</NavDropdown.Item>
+              <NavDropdown.Item href="#portfolio">Portfolio</NavDropdown.Item>
+              <NavDropdown.Item href="#contact">Contact</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
+              <NavDropdown.Item href="#GitHub">
                 Separated link
               </NavDropdown.Item>
             </NavDropdown>
