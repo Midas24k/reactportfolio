@@ -8,7 +8,7 @@ import './index.css';
 
 
 // import ErrorPage from './pages/ErrorPage';
-import HomePage from './pages/HomePage';
+import HomePage from './components/HomePage';
 // import PortfolioPage from './pages/PortfolioPage';
 import AboutPage from './pages/AboutPage';
 // import ContactPage from './pages/ContactPage';

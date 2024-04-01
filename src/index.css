@@ -27,7 +27,8 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  background: navy;
+  background: rgb(142,107,213);
+  background: radial-gradient(circle, rgba(142,107,213,1) 13%, rgba(2,3,3,1) 100%);
   
 }
 

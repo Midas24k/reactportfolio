@@ -2,10 +2,16 @@ import "../styles/Header.css";
 
 const styles = {
   headerStyle: {
-    background: "radial-gradient(circle, rgba(195,174,238,1) 0%, rgba(6,60,125,1) 100%)",
+    background: "",
+    border: "8px silver solid",
+    radius: "10px"
   },
   headingStyle: {
     fontSize: "100px",
+    color: "white",
+    textAlign: "center",
+    padding: "20px",
+    margin: "0", 
   },
 };
 
