@@ -2,13 +2,18 @@ import Breadcrumb from 'react-bootstrap/Breadcrumb';
 
 const styles = {
     footerStyle: {
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        textAlign: "center",
         
+
     },
 };
 
 function Footer() {
     return (
-      <Breadcrumb>
+      <Breadcrumb style={styles.footerStyle}>
         <Breadcrumb.Item href="https://github.com/Midas24k">GitHub</Breadcrumb.Item>
         <Breadcrumb.Item href="">
             LinkedIn

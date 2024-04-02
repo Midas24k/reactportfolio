@@ -11,9 +11,10 @@ const styles = {
         justifyContent: "center",
         alignItems: "center",
         textAlign: "center",
-        backgroundColor: "darkgrey",
+        backgroundColor: "slategrey",
         padding: "20px",
-        margin: "100px ",
+        margin: "200px",
+        borderRadius: "10px",
     },
 };
 
