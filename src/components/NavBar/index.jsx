@@ -19,8 +19,8 @@ function NavBar() {
               <NavDropdown.Item href="#portfolio">Portfolio</NavDropdown.Item>
               <NavDropdown.Item href="#contact">Contact</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#GitHub">
-                Separated link
+              <NavDropdown.Item href="#Resume">
+                Resume Download
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
