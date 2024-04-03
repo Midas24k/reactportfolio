@@ -17,7 +17,7 @@ function NavBar() {
   return (
     <Navbar bg="dark" data-bs-theme="dark">
       <Navbar expand="lg" className="bg-body-tertiary">
-        <Container fluid>
+        <Container>
           <Row>
             <Col>
               <Navbar.Brand href="#home">Endless Possibilities</Navbar.Brand>

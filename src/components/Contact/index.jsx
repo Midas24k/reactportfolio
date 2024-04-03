@@ -82,7 +82,7 @@ function ContactForm() {
         </Form.Group>
         <Form.Group as={Col} md="9" controlId="validationCustom04">
           <Form.Label>Message</Form.Label>
-          <Form.Control type="text" placeholder="" required />
+          <Form.Control as="textarea" placeholder="" required />
           <Form.Control.Feedback type="invalid">
             Please provide a short message.
           </Form.Control.Feedback>
@@ -91,8 +91,8 @@ function ContactForm() {
       <Form.Group className="mb-3">
         <Form.Check 
           required
+          feedback= "You must agree before submitting."
           label="Agree to terms and conditions"
-          feedback="You must agree before submitting."
           feedbackType="invalid"
         />
       </Form.Group>
