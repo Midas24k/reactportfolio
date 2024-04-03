@@ -13,7 +13,7 @@ const styles = {
         textAlign: "center",
         backgroundColor: "slategrey",
         padding: "20px",
-        margin: "200px",
+        margin: "500px",
         borderRadius: "10px",
     },
 };
@@ -96,7 +96,7 @@ function ContactForm() {
           feedbackType="invalid"
         />
       </Form.Group>
-      <Button type="submit">Submit</Button>
+      <Button variant="dark" type="submit">Submit</Button>
     </Form>
   );
 }

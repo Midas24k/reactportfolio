@@ -8,9 +8,8 @@ const styles = {
       textAlign: "center",
     },
     homeSiteStyle: {
-      
-      
-
+      margin: "20px"
+    
     },
     };
 
@@ -20,8 +19,8 @@ export function HomePage() {
     <div style={styles.homePageStyle} className="homePage">
       <img src="src/assets/jameswebb.jpg" alt="jameswebb"></img> 
       <p style={styles.homePageStyle}>"Endless possibilities await those who dare to dream, code, and create. Within the complexity lies the opportunity to create something truly extraordinary."</p>
-      <h2 style={styles.homePageStyle}>Created by: Roderick Hughey</h2>
-      <Button variant="dark" size="lg">Enter</Button>{''}
+      <Button variant="dark" size="lg"style={styles.homeSiteStyle}>Portfolio</Button>{''}
+      <Button variant="dark" size="lg" style={styles.homeSiteStyle}>Resume</Button>{''}
     </div>
   );
 }

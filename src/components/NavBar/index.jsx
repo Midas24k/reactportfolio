@@ -3,9 +3,18 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
+const styles = {
+  navbarStyle: {
+    display: "flex",
+    flexDirection: "space-between",
+    
+  },
+
+};
+
 function NavBar() {
   return (
-    <Navbar bg="dark" data-bs-theme="dark">
+    <Navbar bg="dark" data-bs-theme="dark" style={styles.navbarStyle}>
       <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
         <Navbar.Brand href="#home">Endless Possibilities</Navbar.Brand>

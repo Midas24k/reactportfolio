@@ -11,7 +11,7 @@ import './index.css';
 import HomePage from './components/HomePage';
 // import PortfolioPage from './pages/PortfolioPage';
 import AboutCard from './components/Card';
-// import ContactPage from './pages/ContactPage';
+import ContactForm from './components/Contact';
 
 
 const router = createBrowserRouter([
@@ -31,10 +31,10 @@ const router = createBrowserRouter([
       //   path: 'portfolio',
       //   element: <PortfolioPage />,
       // },
-      // {
-      //   path: 'contact',
-      //   element: < ContactPage />,
-      // },
+      {
+        path: 'contact',
+        element: <ContactForm/>,
+      },
     ],
   },
 ]);
