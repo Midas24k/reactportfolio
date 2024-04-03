@@ -8,7 +8,7 @@ import './index.css';
 
 // import ErrorPage from './pages/ErrorPage';
 import HomePage from './components/HomePage';
-import AboutCard from './components/Card';
+import FigureAbout from './components/AboutMe';
 import SkillsLanguages from './components/Skills';
 import PortfolioProjects from './components/Portfolio';
 import ContactForm from './components/Contact';
@@ -25,7 +25,7 @@ const router = createBrowserRouter([
       },
       {
         path: 'about',
-        element: <AboutCard />,
+        element: <FigureAbout/>,
       },
       {
         path: 'skills',
