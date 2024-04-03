@@ -6,6 +6,7 @@ const styles = {
       justifyContent: "center",
       alignItems: "center",
       textAlign: "center",
+      textShadow: "1px 1px 15px black",
     },
     homeSiteStyle: {
       margin: "20px"

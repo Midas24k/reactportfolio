@@ -12,6 +12,7 @@ const styles = {
     textAlign: "center",
     padding: "20px",
     margin: "0", 
+    textShadow: "1px 1px 2px black"
   },
 };
 
