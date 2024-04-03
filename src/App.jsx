@@ -6,7 +6,8 @@ import FigureAbout from './components/AboutMe';
 import SkillsLanguages from './components/Skills';
 import PortfolioProjects from './components/Portfolio';
 import ContactForm from './components/Contact';
-
+// import Navigation from './components/Navigation';
+{/* <Navigation/> */}
 
 function App() {
   return (

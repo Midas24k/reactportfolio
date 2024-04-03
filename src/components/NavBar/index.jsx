@@ -15,19 +15,21 @@ const styles = {
 
 function NavBar() {
   return (
-    <Navbar bg="dark" data-bs-theme="dark">
-      <Navbar expand="lg" className="bg-body-tertiary">
+    
+      <Navbar expand="lg" className="bg-body-tertiary " bg="dark" data-bs-theme="dark">
         <Container>
-          <Row>
+          <Row className="d-flex flex-row">
             <Col>
               <Navbar.Brand href="#home">Endless Possibilities</Navbar.Brand>
             </Col>
+          </Row>
+          <Row>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="justify-content-end" activeKey="/home">
-                <Col xs={6}>
+                
                   <Nav.Link href="#home">Home</Nav.Link>
-                </Col>
+               
                 <Nav.Link href="#About">About</Nav.Link>
                 <NavDropdown title="Misc" id="basic-nav-dropdown">
                   <NavDropdown.Item href="#skills">Skills</NavDropdown.Item>
@@ -45,7 +47,7 @@ function NavBar() {
           </Row>
         </Container>
       </Navbar>
-    </Navbar>
+    
   );
 }
 
