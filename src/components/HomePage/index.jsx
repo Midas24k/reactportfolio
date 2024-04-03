@@ -10,7 +10,7 @@ const styles = {
     },
     homeSiteStyle: {
       margin: "20px"
-    
+  
     },
     };
 
