@@ -7,7 +7,8 @@ const styles = {
       alignItems: "center",
       textAlign: "center",
       marginBottom: "30px",
-        
+      fontSize: "28px",
+      color: "white",
     },
 };
 
@@ -18,7 +19,7 @@ function Footer() {
         <Breadcrumb.Item href="https://www.linkedin.com/in/rod-hughey24k/">
           LinkedIn
         </Breadcrumb.Item>
-        <Breadcrumb.Item active></Breadcrumb.Item>
+        <Breadcrumb.Item active>Coming Soon</Breadcrumb.Item>
       </Breadcrumb>
     );
   }
