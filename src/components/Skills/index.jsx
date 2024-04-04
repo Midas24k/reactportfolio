@@ -11,12 +11,14 @@ const styles = {
     },
     textStyle: {
         textAlign: "center",
+        marginTop: "50px",
         marginBottom: "50px",
+        fontSize: "40px"
     },
     paragraphStyle: {
         textShadow: "1px 1px 30px black",
         textAlign: "left",
-        fontSize: "230px",
+        fontSize: "23px",
         font:"bold",
         color:"silver",
         marginTop: "50px",
