@@ -13,8 +13,6 @@ const styles = {
     borderWidth: "2px",
     boxShadow: "5px 5px 5px black",
     marginBottom: "50px"
-   
-    
   },
     titleStyle: {
         textAlign: "center",
@@ -22,6 +20,7 @@ const styles = {
         color: "silver",
         marginTop: "50px",
         fontSize: "35px",
+        fontFamily: "cursive"
     },
     imageStyle: {
        
@@ -29,6 +28,7 @@ const styles = {
     },
     buttonStyle: {
         margin: "20px",
+        
     },
     
 

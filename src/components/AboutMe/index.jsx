@@ -37,12 +37,22 @@ const styles = {
     textShadow: "1px 1px 15px black",
     font: "italic"
 
+  },
+  titleStyle: {
+    textAlign: "center",
+    marginBottom: "50px", 
+    color: "silver",
+    marginTop: "50px",
+    fontSize: "35px",
+    fontFamily: "cursive"
+
   }
 };
 
 
 function FigureAbout() {
     return (
+      
       <Container style={styles.figureStyle} >
         <Row>
           <Col>

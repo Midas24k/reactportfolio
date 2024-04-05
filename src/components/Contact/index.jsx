@@ -16,6 +16,11 @@ const styles = {
         margin: "200px",
         borderRadius: "10px",
     },
+    textStyle: {
+        color: "silver",
+        fontSize: "20px",
+        fontFamily: "cursive",
+    }
 };
 
 
@@ -34,6 +39,7 @@ function ContactForm() {
   };
 
   return (
+  
     <Form noValidate validated={validated} onSubmit={handleSubmit} style={styles.contactFormStyle}>
       <Row className="mb-3">
         <Form.Group as={Col} md="4" controlId="validationCustom01">
@@ -42,7 +48,7 @@ function ContactForm() {
             required
             type="text"
             placeholder="First name"
-            defaultValue="Mark"
+            defaultValue=""
           />
           <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
         </Form.Group>
@@ -52,7 +58,7 @@ function ContactForm() {
             required
             type="text"
             placeholder="Last name"
-            defaultValue="Otto"
+            defaultValue=""
           />
           <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
         </Form.Group>
@@ -77,7 +83,7 @@ function ContactForm() {
           <Form.Label>Company</Form.Label>
           <Form.Control type="text" placeholder="Company name" required />
           <Form.Control.Feedback type="invalid">
-            Please provide a valid city.
+            Please provide a valid Company.
           </Form.Control.Feedback>
         </Form.Group>
         <Form.Group as={Col} md="9" controlId="validationCustom04">
@@ -89,10 +95,10 @@ function ContactForm() {
         </Form.Group>
       </Row>
       <Form.Group className="mb-3">
-        <Form.Check 
+        <Form.Check  
           required
-          feedback= "You must agree before submitting."
           label="Agree to terms and conditions"
+          feedback= "You must agree before submitting."
           feedbackType="invalid"
         />
       </Form.Group>

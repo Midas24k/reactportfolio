@@ -6,13 +6,14 @@ import Button from 'react-bootstrap/Button';
 
 const styles = {
     skillStyle: {
-        
-       
+          
     },
     textStyle: {
         textAlign: "center",
+        marginTop: "50px",
         marginBottom: "50px",
-        fontSize: "30px"
+        fontSize: "30px",
+        fontFamily: "cursive"
     },
     paragraphStyle: {
         textShadow: "1px 1px 30px black",
@@ -23,12 +24,9 @@ const styles = {
        
        
     },
-    buttonStyle: {
-        
+    buttonStyle: {  
         margin: "20px",
-        
-      
-        
+
     },
     bottomRowStyle: {
         marginBottom: "100px",
