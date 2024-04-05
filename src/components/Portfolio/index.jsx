@@ -6,23 +6,32 @@ import Col from "react-bootstrap/Col";
 
 const styles = {
   cardStyle: {
-    width: "30rem",
-    height: "20rem",
+    width: "100%",
     color: "silver",
     backgroundColor: "transparent",
     borderColor: "black",
     borderWidth: "2px",
     boxShadow: "5px 5px 5px black",
-    marginTop:"60px",
-    marginLeft:"80px"
+    marginBottom: "50px"
+   
+    
   },
     titleStyle: {
         textAlign: "center",
         marginBottom: "50px",
-        marginTop: "200px",
         color: "silver",
-        fontSize: "40px",
+        marginTop: "50px",
+        fontSize: "35px",
     },
+    imageStyle: {
+       
+        width: "100%"
+    },
+    buttonStyle: {
+        margin: "20px",
+    },
+    
+
 };
 
 function PortfolioProjects() {
@@ -37,55 +46,25 @@ function PortfolioProjects() {
             <Row>
                 <Col> 
                     <Card style={styles.cardStyle}>
-                        <Card.Img variant="top" src="src/assets/React-Weather.png" />
                         <Card.Body>
-                        <Card.Title>Weather App</Card.Title>
-                        <Card.Text>
-                         
-                        </Card.Text>
-                        <Button variant="primary">Go somewhere</Button>
-                        <Button variant="primary">Go somewhere</Button>
+                            <Card.Img style={styles.imageStyle} variant="top" src="src/assets/React-Weather.png" />
+                            <Card.Title>Weather App</Card.Title>
+                            <a href="https://github.com/Midas24k/its-raining-outside" target="_blank" rel="noreferrer">
+                            <Button style={styles.buttonStyle} variant="dark"> GitHub Repository</Button></a>
+                            <a href="https://midas24k.github.io/its-raining-outside/" target="_blank" rel="noreferrer">
+                            <Button style={styles.buttonStyle} variant="dark"> Weather App</Button></a>
                         </Card.Body>
                     </Card>
                 </Col>
                 <Col> 
                     <Card style={styles.cardStyle}>
-                        <Card.Img variant="top" src="src/assets/React Notetaker1.png" />
                         <Card.Body>
-                        <Card.Title>Note Taker App</Card.Title>
-                        <Card.Text>
-                         
-                        </Card.Text>
-                        <Button variant="primary">Go somewhere</Button>
-                        <Button variant="primary">Go somewhere</Button>
-                        </Card.Body>
-                    </Card>
-                </Col>
-            </Row>
-            <Row>
-                <Col> 
-                    <Card style={styles.cardStyle}>
-                        <Card.Img variant="top" src="src/assets/React-ProtectyaEars.png" />
-                        <Card.Body>
-                        <Card.Title>ProtectyaEars</Card.Title>
-                        <Card.Text>
-                         
-                        </Card.Text>
-                        <Button variant="primary">Go somewhere</Button>
-                        <Button variant="primary">Go somewhere</Button>
-                        </Card.Body>
-                    </Card>
-                </Col>
-                <Col> 
-                    <Card style={styles.cardStyle}>
-                        <Card.Img variant="top" src="src/assets/React-WinningEdge.png" />
-                        <Card.Body>
-                        <Card.Title>WinningEdge</Card.Title>
-                        <Card.Text>
-                         
-                        </Card.Text>
-                        <Button variant="primary">Go somewhere</Button>
-                        <Button variant="primary">Go somewhere</Button>
+                            <Card.Img style={styles.imageStyle} variant="top" src="src/assets/React Notetaker1.png" />
+                            <Card.Title>Note Taker App</Card.Title>
+                            <a href="https://github.com/Midas24k/the-new-world-diary" target="_blank" rel="noreferrer">
+                            <Button style={styles.buttonStyle} variant="dark"> GitHub Repository</Button> </a>
+                            <a href="https://the-note-taker-777-3d391e8df5a5.herokuapp.com/" target="_blank" rel="noreferrer">
+                            <Button style={styles.buttonStyle} variant="dark">Note Taker</Button> </a>
                         </Card.Body>
                     </Card>
                 </Col>
@@ -93,33 +72,56 @@ function PortfolioProjects() {
             <Row>
                 <Col> 
                     <Card style={styles.cardStyle}>
-                        <Card.Img variant="top" src="src/assets/React-PasswordMaker.png" />
                         <Card.Body>
-                        <Card.Title>Password Maker</Card.Title>
-                        <Card.Text>
-                         
-                        </Card.Text>
-                        <Button variant="primary">Go somewhere</Button>
-                        <Button variant="primary">Go somewhere</Button>
+                            <Card.Img style={styles.imageStyle} variant="top" src="src/assets/React-ProtectyaEars.png" />
+                            <Card.Title>ProtectyaEars</Card.Title> 
+                            <a href="https://github.com/JasonArriaza/Protect-Your-Ears" target="_blank" rel="noreferrer">               
+                            <Button style={styles.buttonStyle} variant="dark"> GitHub Repository</Button> </a>
+                            <a href="https://jasonarriaza.github.io/Protect-Your-Ears/" target="_blank" rel="noreferrer">
+                            <Button style={styles.buttonStyle} variant="dark">ProtectyaEars</Button> </a>
                         </Card.Body>
                     </Card>
                 </Col>
                 <Col> 
                     <Card style={styles.cardStyle}>
-                        <Card.Img variant="top" src="src/assets/React-Horiseon.png" />
                         <Card.Body>
-                        <Card.Title>Horiseon Marketing</Card.Title>
-                        <Card.Text>
-                         
-                        </Card.Text>
-                        <Button variant="primary">Go somewhere</Button>
-                        <Button variant="primary">Go somewhere</Button>
+                            <Card.Img style={styles.imageStyle} variant="top" src="src/assets/React-WinningEdge.png" />
+                            <Card.Title>WinningEdge</Card.Title>
+                            <a href="https://github.com/adamboudruh/Group-1-Winning-Edge" target="_blank" rel="noreferrer">
+                            <Button style={styles.buttonStyle} variant="dark"> GitHub Repository</Button> </a>
+                            <a href="https://pacific-shelf-77218-ba08c8175600.herokuapp.com/" target="_blank" rel="noreferrer">
+                            <Button style={styles.buttonStyle} variant="dark">WinningEdge</Button> </a>
+                        </Card.Body>
+                    </Card>
+                </Col>
+            </Row>
+            <Row>
+                <Col> 
+                    <Card style={styles.cardStyle}>
+                        <Card.Body>
+                            <Card.Img style={styles.imageStyle} variant="top" src="src/assets/React-PasswordMaker.png" />
+                            <Card.Title>Password Maker</Card.Title>
+                            <a href="https://github.com/Midas24k/MostconfusingPword" target="_blank" rel="noreferrer">
+                            <Button style={styles.buttonStyle} variant="dark"> GitHub Repository</Button> </a>
+                            <a href="https://midas24k.github.io/MostconfusingPword/" target="_blank" rel="noreferrer">
+                            <Button style={styles.buttonStyle} variant="dark">Password Maker</Button> </a>
+                        </Card.Body>
+                    </Card>
+                </Col>
+                <Col> 
+                    <Card style={styles.cardStyle}>
+                        <Card.Body>
+                            <Card.Img  style={styles.imageStyle}variant="top" src="src/assets/React-Horiseon.png" />
+                            <Card.Title>Horiseon Marketing</Card.Title>
+                            <a href="https://github.com/Midas24k/Horiseon-Marketing-Agency" target="_blank" rel="noreferrer">
+                            <Button style={styles.buttonStyle} variant="dark"> GitHub Repository </Button> </a>
+                            <a href="https://midas24k.github.io/Horiseon-Marketing-Agency/" target="_blank" rel="noreferrer">
+                            <Button style={styles.buttonStyle} variant="dark"> Horiseon Marketing </Button> </a>
                         </Card.Body>
                     </Card>
                 </Col>
             </Row>
 
-         
         </Container>
     );
 }

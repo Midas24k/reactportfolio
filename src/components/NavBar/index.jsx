@@ -4,6 +4,7 @@ import Col from "react-bootstrap/Col";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import { useNavigate } from 'react-router-dom';
 
 const styles = {
   navbarStyle: {
@@ -14,6 +15,7 @@ const styles = {
 };
 
 function NavBar() {
+  const navigate = useNavigate();
   return (
     
       <Navbar expand="lg" className="bg-body-tertiary " bg="dark" data-bs-theme="dark">
@@ -32,11 +34,9 @@ function NavBar() {
                
                 <Nav.Link href="#About">About</Nav.Link>
                 <NavDropdown title="Misc" id="basic-nav-dropdown">
-                  <NavDropdown.Item href="#skills">Skills</NavDropdown.Item>
-                  <NavDropdown.Item href="#portfolio">
-                    Portfolio
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="#contact">Contact</NavDropdown.Item>
+                  <NavDropdown.Item onClick={() => navigate('/skills')}>Skills</NavDropdown.Item> 
+                  <NavDropdown.Item onClick={() => navigate('/portfolio')}>Portfolio</NavDropdown.Item>
+                  <NavDropdown.Item onClick={() => navigate('/contact')}>Contact</NavDropdown.Item>
                   <NavDropdown.Divider />
                   <NavDropdown.Item href="#Resume">
                     Resume Download

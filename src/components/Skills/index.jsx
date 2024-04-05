@@ -6,14 +6,13 @@ import Button from 'react-bootstrap/Button';
 
 const styles = {
     skillStyle: {
-        marginTop: "200px",
+        
        
     },
     textStyle: {
         textAlign: "center",
-        marginTop: "50px",
         marginBottom: "50px",
-        fontSize: "40px"
+        fontSize: "30px"
     },
     paragraphStyle: {
         textShadow: "1px 1px 30px black",
@@ -21,8 +20,8 @@ const styles = {
         fontSize: "23px",
         font:"bold",
         color:"silver",
-        marginTop: "50px",
-        marginBottom: "50px",
+       
+       
     },
     buttonStyle: {
         
@@ -67,7 +66,21 @@ function SkillsLanguages() {
                 </svg>
             </Col>
             <Col xs lg="8" style={styles.paragraphStyle}>
-                <p> With the ever growing field, I devote myself to continuous improvement to stay current. I currently use the following languages in my workflow. A resume download button can be found below if you are interested in my services as well as the live portfolio section with my work that are live to view.  </p>
+                <ul> Front End Development
+                    <li>Proficient in the front-end framework React</li>
+                    <li>Strong command of HTML, CSS, and JavaScript</li>
+                    <li>Experience in building responsive web sites and designing user interfaces</li>
+                    <li>Ability to create component-based reusable and testable modules and pages</li>
+                    <li>Skilled in parsing APIs (JSON) into front-end interfaces</li>
+                </ul>
+                <ul> Back End Development
+                    <li>Proficient in back-end technologies such as Node.js, Express.js</li>
+                    <li>Experience in database management systems like MySQL, MongoDB</li>
+                    <li>Knowledge of server-side programming languages JavaScript and Python </li>
+                    <li>Familiarity with RESTful API design and implementation</li>
+                    <li>Experience in building and maintaining servers and databases</li>
+                </ul>
+                
             </Col>
             <Col xs lg="2"> 
                 <svg viewBox="0 0 128 128">
@@ -82,7 +95,8 @@ function SkillsLanguages() {
                 </svg> 
             </Col>
             <Col med lg="8" className='align-items-center justify-content-center d-flex' >
-                <Button variant="dark" size="lg" style={styles.buttonStyle}>Resume</Button>{''}
+                <a href="https://docs.google.com/document/d/e/2PACX-1vReGaqFmEq-_0XdsS20rGdhabYNQGPyEn1rwzPQtIlWA4bmCmElaGh6Xc_RDI-XcLv4JXOxqfheGCUp/pub" target="_blank" rel="noreferrer">
+                <Button variant="dark" size="lg" style={styles.buttonStyle}>Resume</Button></a>
             </Col>
             <Col xs lg="2">
                 <svg viewBox="0 0 128 128">
