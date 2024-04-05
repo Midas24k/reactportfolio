@@ -21,7 +21,7 @@
     using Vite
 
   ## Usage:
-    to amplify an existing portfolio with up to date methods 
+    For promotional uses only. 
 
   ## Contributors:
     N/A
