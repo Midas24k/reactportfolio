@@ -19,6 +19,7 @@ const styles = {
     height: 350,
     width: 350,
     marginLeft: "50px",
+    marginTop: "50px",
    
   },
   introStyle: {

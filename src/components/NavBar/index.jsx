@@ -32,15 +32,11 @@ function NavBar() {
                 
                   <Nav.Link href="#home">Home</Nav.Link>
                
-                <Nav.Link href="#About">About</Nav.Link>
+                <Nav.Link onClick={()=> navigate('/about')}>About</Nav.Link>
                 <NavDropdown title="Misc" id="basic-nav-dropdown">
-                  <NavDropdown.Item onClick={() => navigate('/skills')}>Skills</NavDropdown.Item> 
                   <NavDropdown.Item onClick={() => navigate('/portfolio')}>Portfolio</NavDropdown.Item>
+                  <NavDropdown.Item onClick={() => navigate('/skills')}>Skills</NavDropdown.Item> 
                   <NavDropdown.Item onClick={() => navigate('/contact')}>Contact</NavDropdown.Item>
-                  <NavDropdown.Divider />
-                  <NavDropdown.Item href="#Resume">
-                    Resume Download
-                  </NavDropdown.Item>
                 </NavDropdown>
               </Nav>
             </Navbar.Collapse>
