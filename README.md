@@ -19,6 +19,7 @@
    
   ## Installation:
     using Vite
+    ![alt text](<Screen Shot 2024-04-08 at 22.33.53 PM.png>)
 
   ## Usage:
     For promotional uses only. 

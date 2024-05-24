@@ -7,7 +7,7 @@ import './index.css';
 
 
 // import ErrorPage from './pages/ErrorPage';
-// import HomePage from './components/HomePage';
+import HomePage from './components/HomePage';
 import FigureAbout from './components/AboutMe';
 import SkillsLanguages from './components/Skills';
 import PortfolioProjects from './components/Portfolio';
@@ -19,11 +19,11 @@ const router = createBrowserRouter([
     path: '/',
     element: <App />,
     children: [
-      // Will use this later after homework is completed and graded
-      // {
-      //   index: true,
-      //   element: <HomePage/>,
-      // },
+      
+      {
+        index: true,
+        element: <HomePage/>,
+      },
       {
         path: 'about',
         element: <FigureAbout/>,
