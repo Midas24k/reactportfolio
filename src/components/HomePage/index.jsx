@@ -9,6 +9,8 @@ const styles = {
     justifyContent: "center",
     alignItems: "center",
     textAlign: "center",
+    height: "100vh",
+    overflow: "visible",
     
   },
   homeSiteStyle: {
@@ -18,12 +20,14 @@ const styles = {
     fontSize: "60px",
     fontFamily: "roboto serif",
     color: "white",
-    marigin: "2%"
+    margin: "2%",
+    lineHeight: "1.2",
   },
   lastNameTextStyle: {
     fontSize: "200px",
     fontFamily: "pacifico",
     color: "white",
+    lineHeight: "1.2",
   },
   col1Style: {
     marginTop: "80px",
@@ -31,6 +35,7 @@ const styles = {
   col2Style: {
     marginTop: "150px",
     marginLeft: "100px",
+    paddingBottom: "50px",
   },
   cloudTextStyle: {
     fontFamily: "'Pacifico', cursive",
@@ -42,10 +47,10 @@ const styles = {
     backgroundPosition: '0%',
     width: '80%',
     margin: '8%',
-    
     fontSize: '140px',
     animation: 'clouds-moving infinite 220s linear',
     textAlign: 'center',
+    lineHeight: '1.2',
   },
   attributeStyle: {
     position: 'relative',

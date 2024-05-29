@@ -1,79 +1,73 @@
-
-import Col from 'react-bootstrap/Col';
-import Container from 'react-bootstrap/Container';
-import Image from 'react-bootstrap/Image';
-import Row from 'react-bootstrap/Row';
+import Col from "react-bootstrap/Col";
+import Container from "react-bootstrap/Container";
+import Image from "react-bootstrap/Image";
+import Row from "react-bootstrap/Row";
+import { useState } from "react";
+import Tab from "react-bootstrap/Tab";
+import Tabs from "react-bootstrap/Tabs";
 
 const styles = {
-  figureStyle: {
-    display: "flex",
-    justifyContent: "flex-start",
-    alignItems: "wrap",
+  containerStyle: {
+    display: "block",
+    justifyContent: "center",
+    alignItems: "center",
     textAlign: "center",
-    border: "15px double black",
+    border: "10px solid silver",
+    background: "black",
     borderRadius: "10px",
-    marginBottom: "100px",
-    marginTop: "100px",
   },
-  imageStyle: {
-    height: 350,
-    width: 350,
-    marginLeft: "50px",
-    marginTop: "50px",
-   
-  },
-  introStyle: {
-    textShadow: "1px 1px 30px black",
-    textAlign: "center",
-    fontSize: "40px",
-    color:"silver",
-    marginTop: "50px",
-
-  },
-  textStyle: {
-    textAlign: "left",
-    margin: "50px",
-    fontSize: "20px",
-    textShadow: "1px 1px 15px black",
-    font: "italic"
-
-  },
-  titleStyle: {
-    textAlign: "center",
-    marginBottom: "50px", 
-    color: "silver",
-    marginTop: "50px",
-    fontSize: "35px",
-    fontFamily: "cursive"
-
-  }
 };
 
+const FigureAbout = () => {
+  const [key, setKey] = useState("home");
 
-function FigureAbout() {
-    return (
-      
-      <Container style={styles.figureStyle} >
-        <Row>
-          <Col>
-            <Image src="src/assets/RodHugh.JPG" style={styles.imageStyle} roundedCircle />
-          </Col>
-          <Col>
-            <h2 style={styles.introStyle}>Hi, I am Roderick Hughey</h2>
-            <p style={styles.textStyle}>
-              " I am a Full Stack Web Developer with a background in the
-              hospitality industry. I have a passion for creating and solving
-              problems. I am a graduate of the University of Minnesota's Full Stack
-              Web Development Bootcamp. I have experience with HTML, CSS,
-              JavaScript, React, Node.js, Express.js, MongoDB, MySQL, Handlebars, and
-              MERN. I am a quick learner and always looking to expand my
-              knowledge. I am excited to bring my skills to a company or venture that
-              values hard work and creativity ".
-            </p>
-          </Col>
-        </Row>
-      </Container>
-    );
-  }
+  return (
+    <Container style={styles.containerStyle}>
+      <Row>
+        <Col>
+          <Tabs
+            id="controlled-tab-example"
+            activeKey={key}
+            onSelect={(k) => setKey(k)}
+          >
+            <Tab eventKey="AboutMe" title="AboutMe">
+              <h1>Hi I'm Roderick </h1>
+              <p>
+                I am a full-stack web developer with a passion for creating
+                beautiful, user-friendly, and functional applications.I am a
+                graduate of the University of Minnesota's Full Stack Web
+                Development Bootcamp. I have experience with a variety of web
+                technologies and am always looking to learn more. I am a quick
+                learner and a team player who is always looking to improve my
+                skills.
+              </p>
+            </Tab>
+            <Tab eventKey="skills" title="Skills">
+              <p>
+                I have experience with a variety of web technologies, including
+                HTML, CSS, JavaScript, React, Node.js, Express, MongoDB, and
+                MySQL. I am always looking to learn more and improve my skills.
+              </p>
+            </Tab>
+            <Tab eventKey="experience" title="Experience">
+              <p>
+                I have experience working on a variety of projects, including
+                web applications, mobile applications, and APIs. I am always
+                looking to learn more and improve my skills.
+              </p>
+            </Tab>
+            <Tab eventKey="education" title="Education">
+              <p>
+                I have a bachelor's degree in computer science from the
+                University of California, Berkeley. I am always looking to learn
+                more and improve my skills.
+              </p>
+            </Tab>
+          </Tabs>
+        </Col>
+      </Row>
+    </Container>
+  );
+};
 
 export default FigureAbout;
