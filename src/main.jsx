@@ -13,6 +13,7 @@ import SkillsLanguages from './components/Skills';
 import PortfolioProjects from './components/Portfolio';
 import ContactForm from './components/Contact';
 
+
    
 const router = createBrowserRouter([
   {
@@ -40,6 +41,7 @@ const router = createBrowserRouter([
         path: 'contact',
         element: <ContactForm/>,
       },
+   
     ],
   },
 ]);

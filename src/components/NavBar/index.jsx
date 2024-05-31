@@ -4,7 +4,8 @@ import Col from "react-bootstrap/Col";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
+import { Stack } from "react-bootstrap";
 
 const styles = {
   navbarStyle: {
@@ -17,33 +18,42 @@ const styles = {
 function NavBar() {
   const navigate = useNavigate();
   return (
-    
-      <Navbar expand="lg" className="bg-body-tertiary " bg="dark" data-bs-theme="dark">
-        <Container>
-          <Row className="d-flex flex-row">
-            <Col>
-              <Navbar.Brand href="#home">Endless Possibilities</Navbar.Brand>
-            </Col>
-          </Row>
-          <Row>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="justify-content-end" activeKey="/home">
-                
-                  <Nav.Link href="#home">Home</Nav.Link>
-               
-                <Nav.Link onClick={()=> navigate('/about')}>About</Nav.Link>
+    <Navbar
+      expand="lg"
+      className="bg-body-tertiary "
+      bg="dark"
+      data-bs-theme="dark"
+    >
+      <Container>
+        <Row className="d-flex flex-row">
+          <Col>
+            <Navbar.Brand href="#home">RLH</Navbar.Brand>
+          </Col>
+        </Row>
+        <Row>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="justify-content-end" activeKey="/home">
+              <Stack direction="horizontal" gap={3}>
+                <Nav.Link href="#home">Home</Nav.Link>
+                <Nav.Link onClick={() => navigate("/about")}>About</Nav.Link>
                 <NavDropdown title="Misc" id="basic-nav-dropdown">
-                  <NavDropdown.Item onClick={() => navigate('/portfolio')}>Portfolio</NavDropdown.Item>
-                  <NavDropdown.Item onClick={() => navigate('/skills')}>Skills</NavDropdown.Item> 
-                  <NavDropdown.Item onClick={() => navigate('/contact')}>Contact</NavDropdown.Item>
+                  <NavDropdown.Item onClick={() => navigate("/portfolio")}>
+                    Portfolio
+                  </NavDropdown.Item>
+                  <NavDropdown.Item onClick={() => navigate("/skills")}>
+                    Skills
+                  </NavDropdown.Item>
+                  <NavDropdown.Item onClick={() => navigate("/contact")}>
+                    Contact
+                  </NavDropdown.Item>
                 </NavDropdown>
-              </Nav>
-            </Navbar.Collapse>
-          </Row>
-        </Container>
-      </Navbar>
-    
+              </Stack>
+            </Nav>
+          </Navbar.Collapse>
+        </Row>
+      </Container>
+    </Navbar>
   );
 }
 
