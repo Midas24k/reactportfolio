@@ -7,6 +7,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import { useNavigate } from "react-router-dom";
 import { Stack } from "react-bootstrap";
 
+
 const styles = {
   navbarStyle: {
     display: "flex",
@@ -27,7 +28,8 @@ function NavBar() {
       <Container>
         <Row className="d-flex flex-row">
           <Col>
-            <Navbar.Brand href="#home">RLH</Navbar.Brand>
+            <Navbar.Brand href="#home"> <img src="src/assets/FullLogo_Transparent large.png" alt="" />
+            </Navbar.Brand>
           </Col>
         </Row>
         <Row>

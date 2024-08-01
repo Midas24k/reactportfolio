@@ -16,10 +16,6 @@ function App() {
     <div>
       <NavBar/>
       <Homepage/>
-      <FigureAbout/>
-      <SkillsLanguages/> 
-      <PortfolioProjects/>
-      <ContactForm/>  
       <Footer/>
     </div>
   );

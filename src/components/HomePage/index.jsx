@@ -17,16 +17,31 @@ const styles = {
     margin: "20px",
   },
   nameTextStyle: {
-    fontSize: "60px",
-    fontFamily: "roboto serif",
-    color: "white",
+    fontSize: "7em",
+    fontFamily: "AnandaBlack",
+    color: "#1f68ef",
     margin: "2%",
     lineHeight: "1.2",
   },
   lastNameTextStyle: {
-    fontSize: "200px",
-    fontFamily: "pacifico",
-    color: "white",
+    fontSize: "12em",
+    fontFamily: "AnandaBlack",
+    color: "#1f68ef",
+    lineHeight: "1.2",
+  },
+  titleNameStyle: {
+    fontSize: "4em",
+    fontFamily: "roboto-serif",
+    color: "black",
+    lineHeight: "1.2",
+  },
+  dividerBarStyle: {
+    solidBorder: 'hr.solid 2px black',
+  },
+  welcomeTextStyle: {
+    fontSize: "2em",
+    fontFamily: "roboto-serif",
+    color: "black",
     lineHeight: "1.2",
   },
   col1Style: {
@@ -37,21 +52,12 @@ const styles = {
     marginLeft: "100px",
     paddingBottom: "50px",
   },
+
   cloudTextStyle: {
-    fontFamily: "'Pacifico', cursive",
-    WebkitBackgroundClip: 'text',
-    WebkitTextFillColor: 'transparent',
-    backgroundImage: 'url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/769286/clouds.jpg)',
-    backgroundSize: 'auto',
-    backgroundAttachment: 'unset',
-    backgroundPosition: '0%',
-    width: '80%',
-    margin: '8%',
-    fontSize: '140px',
-    animation: 'clouds-moving infinite 220s linear',
-    textAlign: 'center',
-    lineHeight: '1.2',
+    fontFamily: "'AnandaBlack', sans-serif",
+    fontSize: "60px",
   },
+
   attributeStyle: {
     position: 'relative',
     fontSize: '26px',
@@ -66,30 +72,18 @@ export function HomePage() {
     <Container style={styles.homePageStyle} className="homePage">
       <Row>
         <Col style={styles.col1Style}>
-          <Image src="src/assets/RodHug.svg" alt="Rod Hughey" />
+          <Image src="" alt="Rod Hughey" />
         </Col>
         <Col style={styles.col2Style}>
           <div style={styles.nameTextStyle}>Roderick</div>
-          <div style={styles.cloudTextStyle}> Hughey</div>
-          <p> FullStack Web Developer</p>
+          <div style={styles.lastNameTextStyle}>Hughey</div>
+          <p style={styles.titleNameStyle}> FullStack Web Developer</p>
+          <hr style={styles.dividerBarStyle}/>
+          <p style={styles.welcomeTextStyle}> Welcome to my Portfolio Site</p>
         </Col>
       </Row>
     </Container>
-    <style>
-        {`
-          @keyframes clouds-moving {
-            0% {
-              background-position: 0%;
-            }
-            50% {
-              background-position: 100%;
-            }
-            100% {
-              background-position: 0%;
-            }
-          }
-        `}
-      </style>
+    
     </>
   );
 }

@@ -3,7 +3,11 @@ import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './App.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './index.css';
+import './css/index.css';
+import './css/screen_layout_large.css';
+import './css/screen_layout_medium.css';
+import './css/screen_layout_small.css';
+
 
 
 // import ErrorPage from './pages/ErrorPage';

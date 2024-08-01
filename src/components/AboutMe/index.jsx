@@ -16,13 +16,13 @@ const styles = {
     alignItems: "center",
     textAlign: "center",
     border: "3px solid silver",
-    background: "eggshell",
+    background: "black",
     borderRadius: "5px",
     padding: "10px",
   },
   cardStyle: {
     marginTop: "20px",
-    backgroundColor: "#f5f5f5",
+    background: "#black",
     borderRadius: "10px"
   }
 };

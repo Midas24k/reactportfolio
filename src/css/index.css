@@ -13,6 +13,10 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+@font-face {
+  font-family: 'AnandaBlack';
+  src: url('../fonts/AnandaBlackPersonalUseRegular-rg9Rx.ttf') format('truetype');
+}
 
 a {
   font-weight: 500;
@@ -24,11 +28,7 @@ a:hover {
 }
 
 body {
-  margin: 0;
-  min-width: 320px;
-  min-height: 100vh;
-  background: rgb(142,107,213);
-  background: radial-gradient(circle, rgba(142,107,213,1) 13%, rgba(2,3,3,1) 100%);
+  background: #ffff url("../assets/triangle_pattern_port.jpg") repeat-x 0px 0px; 
   
 }
 
@@ -55,9 +55,7 @@ h2 {
 img {
   width: 100%;
   max-width: 800px;
-  border-radius: 8px;
-  box-shadow: 10px 10px 10px 10px black ;
-  
+  height: auto;
   
 
 }

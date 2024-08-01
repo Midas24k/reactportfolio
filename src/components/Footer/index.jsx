@@ -6,9 +6,9 @@ const styles = {
       justifyContent: "center",
       alignItems: "center",
       textAlign: "center",
-      marginBottom: "30px",
-      fontSize: "28px",
+      backgroundColor: "#ffffff",
       color: "white",
+      fontSize: "1.5em",
     },
 };
 
