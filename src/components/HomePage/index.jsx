@@ -14,7 +14,7 @@ const styles = {
     
   },
   homeSiteStyle: {
-    margin: "20px",
+    
   },
   nameTextStyle: {
     fontSize: "7em",
@@ -79,7 +79,7 @@ export function HomePage() {
           <div style={styles.lastNameTextStyle}>Hughey</div>
           <p style={styles.titleNameStyle}> FullStack Web Developer</p>
           <hr style={styles.dividerBarStyle}/>
-          <p style={styles.welcomeTextStyle}> Welcome to my Portfolio Site</p>
+          <p style={styles.welcomeTextStyle}> Welcome to my Portfolio </p>
         </Col>
       </Row>
     </Container>

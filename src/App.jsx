@@ -15,7 +15,7 @@ function App() {
   return (
     <div>
       <NavBar/>
-      <Homepage/>
+      <Outlet/>
       <Footer/>
     </div>
   );
