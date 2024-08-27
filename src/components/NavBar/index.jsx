@@ -26,16 +26,16 @@ function NavBar() {
   const navigate = useNavigate();
 
   return (
-    <Navbar bg="dark" variant="dark">
+    <Navbar>
       <Container style={styles.navLinkStyle}>
         <Navbar.Brand href="/">
         <img src="src/assets/FullLogo_Transparent_large.png" alt="Logo"/>
         </Navbar.Brand>
         <Stack direction="horizontal" gap={5}>
-          <Nav.Link onClick={() => navigate("/about")}>About</Nav.Link>
-          <Nav.Link onClick={() => navigate("/skills")}>Skills</Nav.Link>
-          <Nav.Link onClick={() => navigate("/portfolio")}>Portfolio</Nav.Link>
-          <Nav.Link onClick={() => navigate("/contact")}>Contact</Nav.Link>
+          <Nav.Link onClick={() => navigate("/about")}><a>About</a></Nav.Link>
+          <Nav.Link onClick={() => navigate("/services")}><a>Skills</a></Nav.Link>
+          <Nav.Link onClick={() => navigate("/portfolio")}><a>Portfolio</a></Nav.Link>
+          <Nav.Link onClick={() => navigate("/contact")}><a>Contact</a></Nav.Link>
         </Stack>
       </Container>
     </Navbar>

@@ -20,7 +20,7 @@ const styles = {
         textAlign: "left",
         fontSize: "23px",
         font:"bold",
-        color:"silver",
+        color:"black",
        
        
     },

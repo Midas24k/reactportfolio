@@ -9,22 +9,25 @@ const styles = {
     justifyContent: "center",
     alignItems: "center",
     textAlign: "center",
-    height: "100vh",
-    overflow: "visible",
+    backgroundColor: "#ffffff",
+    maxWidth: "980px",
+    margin: "0px auto 0px auto",
+    position: "relative",
+
     
   },
   homeSiteStyle: {
     
   },
   nameTextStyle: {
-    fontSize: "7em",
+    fontSize: "4em",
     fontFamily: "AnandaBlack",
     color: "#1f68ef",
     margin: "2%",
     lineHeight: "1.2",
   },
   lastNameTextStyle: {
-    fontSize: "12em",
+    fontSize: "6em",
     fontFamily: "AnandaBlack",
     color: "#1f68ef",
     lineHeight: "1.2",
@@ -69,10 +72,10 @@ export function HomePage() {
   return (
     <>
     
-    <Container style={styles.homePageStyle} className="homePage">
+    <Container style={styles.homePageStyle} className="page">
       <Row>
         <Col style={styles.col1Style}>
-          <Image src="" alt="Rod Hughey" />
+          <Image src="src/assets/RodHugh.JPG" alt="Rod Hughey" />
         </Col>
         <Col style={styles.col2Style}>
           <div style={styles.nameTextStyle}>Roderick</div>

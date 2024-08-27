@@ -34,7 +34,7 @@ const router = createBrowserRouter([
         element: <FigureAbout/>,
       },
       {
-        path: 'skills',
+        path: 'services',
         element: <SkillsLanguages />,
       },
       {

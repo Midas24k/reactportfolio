@@ -1,11 +1,7 @@
 import "../styles/Header.css";
 
 const styles = {
-  headerStyle: {
-    background: "",
-    border: "8px silver solid",
-    borderRadius: "10px"
-  },
+  
   headingStyle: {
     fontSize: "100px",
     color: "silver",
@@ -19,7 +15,7 @@ const styles = {
 function Header() {
   return (
     <header style={styles.headerStyle} className="header">
-      <h1 style={styles.headingStyle}>Endless Possibilities</h1>
+      <h1 style={styles.headingStyle}></h1>
     </header>
   );
 }
