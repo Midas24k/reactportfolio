@@ -20,7 +20,7 @@ function Footer() {
       <Breadcrumb style={styles.footerStyle}>
         <Breadcrumb.Item href="https://github.com/Midas24k">GitHub</Breadcrumb.Item>
         <Breadcrumb.Item href="https://www.linkedin.com/in/rod-hughey24k/">
-          LinkedIn
+         <img src='src/assets/linkedin.png' alt="LinkedIn"/>
         </Breadcrumb.Item>
         <Breadcrumb.Item active>Coming Soon</Breadcrumb.Item>
       </Breadcrumb>
