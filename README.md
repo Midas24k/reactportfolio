@@ -21,6 +21,16 @@
     using Vite
     ![alt text](<Screen Shot 2024-04-08 at 22.33.53 PM.png>)
 
+  ### Backend Setup
+    Install server dependencies with:
+    ```bash
+    npm install express sqlite3
+    ```
+    Then start the API server using:
+    ```bash
+    npm run server
+    ```
+
   ## Usage:
     For promotional uses only. 
 
