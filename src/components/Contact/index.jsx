@@ -28,11 +28,31 @@ const styles = {
 function ContactForm() {
   const [validated, setValidated] = useState(false);
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
+    event.preventDefault();
     const form = event.currentTarget;
+
     if (form.checkValidity() === false) {
-      event.preventDefault();
       event.stopPropagation();
+      setValidated(true);
+      return;
+    }
+
+    const payload = {
+      firstName: form.firstName.value,
+      lastName: form.lastName.value,
+      company: form.company.value,
+      message: form.message.value,
+    };
+
+    try {
+      await fetch('http://localhost:3001/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      });
+    } catch (err) {
+      console.error(err);
     }
 
     setValidated(true);
@@ -47,6 +67,7 @@ function ContactForm() {
           <Form.Control
             required
             type="text"
+            name="firstName"
             placeholder="First name"
             defaultValue=""
           />
@@ -57,6 +78,7 @@ function ContactForm() {
           <Form.Control
             required
             type="text"
+            name="lastName"
             placeholder="Last name"
             defaultValue=""
           />
@@ -64,7 +86,7 @@ function ContactForm() {
         </Form.Group>
         <Form.Group as={Col} md="3" controlId="validationCustom03">
           <Form.Label>Company</Form.Label>
-          <Form.Control type="text" placeholder="Company name" required />
+          <Form.Control type="text" name="company" placeholder="Company name" required />
           <Form.Control.Feedback type="invalid">
             Please provide a valid Company.
           </Form.Control.Feedback>
@@ -73,7 +95,7 @@ function ContactForm() {
       <Row className="mb-3">
         <Form.Group as={Col} md="9" controlId="validationCustom04">
           <Form.Label>Message</Form.Label>
-          <Form.Control as="textarea" placeholder="" required />
+          <Form.Control as="textarea" name="message" placeholder="" required />
           <Form.Control.Feedback type="invalid">
             Please provide a short message.
           </Form.Control.Feedback>
