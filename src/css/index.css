@@ -28,8 +28,8 @@ a:hover {
 }
 
 body {
-  background: #ffff url("../assets/grunge-gradient-texture-black-white-marble-grunge-gradient-texture.jpg") repeat-x 0px 0px; 
-  
+  background: linear-gradient(to bottom, #ffffff, #cccccc, #1f68ef);
+
 }
 
 .container {
@@ -89,7 +89,7 @@ button:focus-visible {
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
-    background-color: #eae8e8;
+    background: linear-gradient(to bottom, #ffffff, #cccccc, #1f68ef);
   }
   a:hover {
     color:blue;
