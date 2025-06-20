@@ -15,7 +15,7 @@ const styles = {
     width: "100%",
   },
   navLinkStyle: {
-    color: "white",
+    color: "blue",
     fontSize: "1.2em",
     fontFamily: "roboto-serif",
   },
