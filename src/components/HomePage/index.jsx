@@ -75,7 +75,7 @@ export function HomePage() {
     <Container style={styles.homePageStyle} className="page">
       <Row>
         <Col style={styles.col1Style}>
-          <Image src="src/assets/RodHugh.JPG" alt="Rod Hughey" />
+          <Image src="src/assets/roddesign.png" alt="Rod Hughey" />
         </Col>
         <Col style={styles.col2Style}>
           <div style={styles.nameTextStyle}>Roderick</div>
