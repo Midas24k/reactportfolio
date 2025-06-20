@@ -2,6 +2,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
+import rodImage from "../../assets/roddesign.png";
 
 const styles = {
   homePageStyle: {
@@ -75,7 +76,7 @@ export function HomePage() {
     <Container style={styles.homePageStyle} className="page">
       <Row>
         <Col style={styles.col1Style}>
-          <Image src="src/assets/roddesign.png" alt="Rod Hughey" />
+          <Image src={rodImage} alt="Rod Hughey" fluid />
         </Col>
         <Col style={styles.col2Style}>
           <div style={styles.nameTextStyle}>Roderick</div>
