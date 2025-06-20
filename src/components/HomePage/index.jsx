@@ -40,7 +40,7 @@ const styles = {
     lineHeight: "1.2",
   },
   dividerBarStyle: {
-    solidBorder: 'hr.solid 2px black',
+    borderTop: '2px solid black',
   },
   welcomeTextStyle: {
     fontSize: "2em",
