@@ -6,6 +6,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Image from "react-bootstrap/Image";
 import { useNavigate } from "react-router-dom";
 import { Stack } from "react-bootstrap";
+import "../styles/NavBar.css";
 
 
 const styles = {
@@ -29,7 +30,7 @@ function NavBar() {
     <Navbar>
       <Container style={styles.navLinkStyle}>
         <Navbar.Brand href="/">
-        <img src="src/assets/FullLogo_Transparent_large.png" alt="Logo"/>
+        <Image src="src/assets/FullLogo_Transparent_large.png" alt="Logo" className="navbar-logo" fluid />
         </Navbar.Brand>
         <Stack direction="horizontal" gap={5}>
           <Nav.Link onClick={() => navigate("/about")}><a>About</a></Nav.Link>
