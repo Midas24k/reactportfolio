@@ -14,7 +14,7 @@ const styles = {
     boxShadow: "5px 5px 5px black",
     marginBottom: "50px",
     justifyContent: "center",
-    alignText: "center",
+    textAlign: "center",
   },
     titleStyle: {
         textAlign: "center",
